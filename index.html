@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      hr {
+        background-color: #349e86;
+      }
+      .logoClass {
+        position: absolute;
+        display: inline-block;
+        top: -1%;
+
+        padding: 20px;
+        margin: 20px;
+        float: right;
+        right: 33%;
+      }
+      .logo1 {
+        width: 400px;
+      }
+
+      .description {
+        position: relative;
+        display: inline-block;
+        left: 25%;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        color: #573b16;
+        font-size: 19px;
+        line-height: 40px;
+      }
+      #foo {
+        position: fixed;
+        bottom: 5px;
+      }
+
+      li {
+        list-style: none;
+      }
+      a {
+        color: #553914;
+        text-decoration: none;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: large;
+      }
+      .navbar {
+        min-height: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .nav-menu {
+        display: table-column;
+        position: absolute;
+        top: 0px;
+
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+      }
+      .nav-link {
+        transition: 0.7s ease;
+      }
+
+      .nav-link:hover {
+        color: #cd5ba3;
+      }
+      img {
+        top: 200px;
+      }
+      .row1 {
+        display: grid;
+        place-items: center;
+      }
+
+      .column {
+        float: right;
+        width: 33%;
+        padding: 5px;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        color: #553914;
+      }
+      .footer {
+        position: fixed;
+        left: -300px;
+        bottom: 0;
+        width: 100%;
+        background-color: #e2cabf;
+
+        text-align: center;
+      }
+
+      .facebook-icon {
+        color: #cd5ba3;
+        transition: all 200ms ease;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .facebook-icon:hover {
+        color: #349e86;
+      }
+
+      .instagram-icon {
+        color: #cd5ba3;
+        transition: all 200ms ease;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .instagram-icon:hover {
+        color: #349e86;
+      }
+      header {
+        position: fixed;
+        top: 20px;
+      }
+      .contactuser {
+        position: relative;
+        display: inline-block;
+        left: 37%;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        color: #573b16;
+        font-size: 19px;
+        line-height: 40px;
+      }
+
+      button {
+        position: absolute;
+        bottom: -90%;
+        right: 35%;
+        margin: 100px auto;
+        border: 1px solid #cd5ba3;
+        background: #cd5ba3;
+        color: #573b16;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 50px;
+        transition: all 200ms ease;
+        box-shadow: #573B16(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #2ba089;
+        color: #573b16;
+        border: 1px solid #2ba089;
+      }
+      .email {
+        position: relative;
+        display: inline-block;
+
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        color: #573b16;
+        font-size: 19px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #e2cabf">
+    <hr size="450%" />
+
+    <header>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#products" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" onclick="contactuser()" class="nav-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="home" class="logoClass">
+      <img
+        src="https://d2j6dbq0eux0bg.cloudfront.net/images/16830190/1498589015.jpg"
+        alt="Logo for Munamii cakery "
+        class="logo1"
+      />
+    </div>
+
+    <p id="about" class="description">
+      <br />
+      <br /><br />
+      Welcome to Munamii Cakery!<br />
+      We offer you the most delicious cakes and cupcakes for all kinds of events
+      and celebrations.<br />
+      Browse around to discover what you would like to buy.<br />
+      At Munamii Cakery, each cake, each box of cupcakes that we make has a very
+      special value for us. <br />
+      We not only want to bring a dessert to your table but rather a unique
+      experience for you, which will become an unforgettable memory. <br />
+      We have been in the pastry market for more than 8 years and now we offer
+      you a new way to shop through our website.
+      <br />
+      <br />
+      <br />
+      <br /><br /><br />
+    </p>
+
+    <div id="products" class="row">
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cakes "
+          class="row1"
+          height="300px"
+        />
+        <p>Macaroon cake 300:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1627834377411-8da5f4f09de8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="Cakes "
+          class="row1"
+          height="300px"
+        />
+        <p>Citrus cake 300:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=729&q=80"
+          alt="Cakes "
+          class="row1"
+          height="300px"
+        />
+        <p>Purple dream 300:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1616690710400-a16d146927c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGNha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
+          alt="Cakes "
+          class="row1"
+          height="300px"
+        />
+        <p>All around cake 300:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+          alt="Cakes "
+          class="row2"
+          height="300px"
+        />
+        <p>Vanilla wedding cake 300:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+          alt="Cakes "
+          class="row2"
+          height="300px"
+        />
+        <p>Dark chocolate cake 300:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cakes "
+          class="row2"
+          height="300px"
+        />
+        <p>Purple rose cake 300:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=636&q=80"
+          alt="Cakes "
+          class="row2"
+          height="300px"
+        />
+        <p>Cherry sprinkles cake 300:-</p>
+      </div>
+
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cupcake"
+          class="row3"
+          height="300px"
+        />
+        <p>Vanilla velvet cupcake 45:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1578922794704-7bdd46f70ce0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+          alt="Cupcake"
+          class="row3"
+          height="300px"
+        />
+        <p>Happy birthday cupcake 45:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cupcake"
+          class="row3"
+          height="300px"
+        />
+        <p>Hazelnut cupcake 45:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1555526148-0fa555bb2e78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cupcake"
+          class="row3"
+          height="300px"
+        />
+        <p>Blue rose cupcake 45:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1615832494873-b0c52d519696?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cupcake"
+          class="row4"
+          height="300px"
+        />
+        <p>Red velvet cupcake 45:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1587536849024-daaa4a417b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cupcake"
+          class="row4"
+          height="300px"
+        />
+        <p>Tie dye cupcake 45:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1620442513427-814e90d384e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cupcake"
+          class="row4"
+          height="300px"
+        />
+        <p>Pink love cupcake 45:-</p>
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1563778084459-859099e48677?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt="Cupcake"
+          class="row4"
+          height="300px"
+        />
+        <p>Strawberry cupcake 45:-</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a
+        class="facebook-icon"
+        href="https://www.facebook.com/munamiicupcakes/"
+        target="blank"
+      >
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a
+        class="instagram-icon"
+        href="https://www.instagram.com/munamii.cakery/"
+        target="blank"
+      >
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </div>
+    <div id="contact" class="contactuser">
+      Hi!<br />
+      I would love to get in contact with you when I have the time. <br />
+
+      <label>Enter your email:</label> <br /><br />
+      <input type="text" id="yourEmail" class="email" /> <br />
+      <button type="button" id="coolButton" onclick="clickalert()">
+        Submit
+      </button>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      function clickalert() {
+        alert("Thanks, I will contact you as soon as possile");
+      }
+    </script>
+  </body>
+</html>
